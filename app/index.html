@@ -16,8 +16,10 @@
 </head>
 <body>
   <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+    <li><a href="#/serviceExample">ServiceExample</a></li>
+    <li><a href="#/scopeExample">ScopeExample</a></li>
   </ul>
 
   <!--[if lt IE 7]>
@@ -25,6 +27,16 @@
   <![endif]-->
 
   <div ng-view></div>
+
+  <div>
+    <ul>
+      <p>Scope Event Propagation</p>
+        <li ng-repeat="item in [1, 2]" ng-controller="ScopeExampleController">
+          Leaf scope <tt>MyEvent</tt> count: {{count}}
+        </li>
+        <button ng-click="$broadcast('MyEvent')">$broadcast('MyEvent')</button>
+      </ul>
+  </div>
 
   <div>Angular seed app: v<span app-version></span></div>
 
@@ -36,8 +48,14 @@
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
+  <script src="serviceExample/serviceExample.js"></script>
+  <script src="scopeExample/scopeExample.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/serviceExample/serviceExample.module.js"></script>
+  <script src="core/serviceExample/serviceExample.service.js"></script>
+
 </body>
 </html>
