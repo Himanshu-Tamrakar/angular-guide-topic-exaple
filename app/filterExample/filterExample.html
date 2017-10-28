@@ -1,0 +1,22 @@
+<p>
+    ----------------------------</p>
+Inbuilt Filter {{rupees | currency}}
+<p>----------------------------</p>
+Inbuit Filter insite controller
+
+<div>
+    <div>
+        All entries:
+        <span ng-repeat="entry in array">{{entry.name}} </span>
+    </div>
+    <div>
+        Entries that contain an "a":
+        <span ng-repeat="entry in filteredArray">{{entry.name}} </span>
+    </div>
+</div>
+<p>----------------------------</p>
+Custom Filter
+ No filter: {{greeting}}<br>
+ Reverse: {{greeting|reverse}}<br>
+ Reverse + uppercase: {{greeting|reverse:true}}<br>
+ Reverse, filtered in controller: {{filteredGreeting}}<br>
