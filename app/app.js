@@ -5,10 +5,12 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
-  'myApp.version'
+  'myApp.version',
+  'serviceExample',
+  'scopeExample'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('');
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
