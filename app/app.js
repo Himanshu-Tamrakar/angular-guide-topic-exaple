@@ -7,7 +7,10 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.version',
   'serviceExample',
-  'scopeExample'
+  'scopeExample',
+  'expressionExample',
+  'filterExample',
+  'formExample'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('');
