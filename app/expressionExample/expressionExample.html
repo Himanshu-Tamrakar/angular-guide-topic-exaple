@@ -1,0 +1,12 @@
+<div>
+    <pre>$event Example</pre>
+    <button ng-click="clickMe($event)">Click</button>
+    <!-- $event will not print because out of $event scope -->
+    <p><code>$event</code>: <pre> {{$event | json}}</pre></p>
+    <p><code>clickEvent</code>: <pre>{{clickEvent | json}}</pre></p>
+    <p>---------------------------------------------------------------</p>
+    <pre>One Time Bining</pre>
+    <button ng-click="clickMe($event)">Click Me</button>
+    <p id="one-time-binding-example">One time binding: {{::name}}</p>
+    <p id="normal-binding-example">Normal binding: {{name}}</p>
+</div>
