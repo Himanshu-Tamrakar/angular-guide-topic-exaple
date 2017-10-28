@@ -1,0 +1,6 @@
+Your name:
+<input type="text" ng-model="username">
+<button ng-click='sayHello()'>greet</button>
+<hr> {{greeting}}
+Middle scope <tt>MyEvent</tt> count: {{count}}
+<button ng-click="$emit('MyEvent')">$emit('MyEvent')</button>
