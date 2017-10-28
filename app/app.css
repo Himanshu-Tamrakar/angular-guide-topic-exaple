@@ -15,11 +15,19 @@
   content: "]";
 }
 
-.menu > li {
+.menu>li {
   display: inline;
 }
 
-.menu > li + li:before {
+.menu>li+li:before {
   content: "|";
   padding-right: 0.3em;
+}
+
+.css-form input.ng-invalid.ng-touched {
+  background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-touched {
+  background-color: #78FA89;
 }
