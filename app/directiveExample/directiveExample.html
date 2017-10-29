@@ -1,0 +1,16 @@
+<!-- <p>Template Binding Directive</p> -->
+<!-- <my-customer></my-customer>
+<div my-customer></div> -->
+<p>-------------------------------</p>
+<p>Template Binding Directive</p>
+<div my-customer1 type="name"></div><div my-customer1 type="address"></div>
+<p>-------------------------------</p>
+<p>Isolation Directive</p>
+<my-customer customer="customer"></my-customer>
+<my-customer customer="customer1"></my-customer>
+<p>-------------------------------</p>
+<p>DOM Manipulation through link option</p>
+<div>
+  Date format: <input ng-model="format"> <hr/>
+  Current time is: <span my-current-time="format"></span>
+</div>
